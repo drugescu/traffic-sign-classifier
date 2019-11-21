@@ -19,23 +19,23 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./results/histograms.png "Visualization" =64x64
-[image2]: ./results/pipeline.png "Processing Pipeline" =64x64
-[image3]: ./results/random_noise.jpg "Random Noise" =64x64
-[image4]: ./my_signs/30lim1.jpg "Traffic Sign 1" =64x64
-[image5]: ./my_signs/50lim1.jpg "Traffic Sign 2" =64x64
-[image6]: ./my_signs/60lim1.jpg "Traffic Sign 3" =64x64
-[image7]: ./my_signs/nopassing1.jpg "Traffic Sign 4" =64x64
-[image8]: ./my_signs/novehicles1.jpg "Traffic Sign 5" =64x64
-[image9]: ./my_signs/priorityway1.jpg "Traffic Sign 6" =64x64
-[image10]: ./my_signs/round1.jpg "Traffic Sign 7" =64x64
-[image11]: ./my_signs/school1.jpg "Traffic Sign 8" =64x64
-[image12]: ./my_signs/stop1.jpg "Traffic Sign 9" =64x64
-[image13]: ./my_signs/trafficsignals1.jpg "Traffic Sign 10" =64x64
-[image14]: ./my_signs/turnleftahead1.jpg "Traffic Sign 11" =64x64
-[image15]: ./my_signs/watchforpedestrians1.jpg "Traffic Sign 12" =64x64
-[image16]: ./my_signs/wrongway1.jpg "Traffic Sign 13" =64x64
-[image17]: ./my_signs/yield1.jpg "Traffic Sign 14" =64x64
+[image1]: ./results/histograms.png "Visualization"
+[image2]: ./results/pipeline.png "Processing Pipeline"
+[image3]: ./results/random_noise.jpg "Random Noise"
+[image4]: ./my_signs/30lim1.jpg "Traffic Sign 1"
+[image5]: ./my_signs/50lim1.jpg "Traffic Sign 2"
+[image6]: ./my_signs/60lim1.jpg "Traffic Sign 3"
+[image7]: ./my_signs/nopassing1.jpg "Traffic Sign 4"
+[image8]: ./my_signs/novehicles1.jpg "Traffic Sign 5"
+[image9]: ./my_signs/priorityway1.jpg "Traffic Sign 6"
+[image10]: ./my_signs/round1.jpg "Traffic Sign 7"
+[image11]: ./my_signs/school1.jpg "Traffic Sign 8"
+[image12]: ./my_signs/stop1.jpg "Traffic Sign 9"
+[image13]: ./my_signs/trafficsignals1.jpg "Traffic Sign 10"
+[image14]: ./my_signs/turnleftahead1.jpg "Traffic Sign 11"
+[image15]: ./my_signs/watchforpedestrians1.jpg "Traffic Sign 12"
+[image16]: ./my_signs/wrongway1.jpg "Traffic Sign 13"
+[image17]: ./my_signs/yield1.jpg "Traffic Sign 14"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -197,11 +197,11 @@ With the final results and increasing the epochs to about 30 I arrived at a stea
 
 Here are 14 German traffic signs that I found on the web:
 
-![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8] ![alt text][image9]
-![alt text][image10] ![alt text][image11] ![alt text][image12]
-![alt text][image13] ![alt text][image14] ![alt text][image15]
-![alt text][image16] ![alt text][image17]
+![alt text][image4](=64x64) ![alt text][image5](=64x64) ![alt text][image6](=64x64) 
+![alt text][image7](=64x64) ![alt text][image8](=64x64) ![alt text][image9](=64x64)
+![alt text][image10](=64x64) ![alt text][image11](=64x64) ![alt text][image12](=64x64)
+![alt text][image13](=64x64) ![alt text][image14](=64x64) ![alt text][image15](=64x64)
+![alt text][image16](=64x64) ![alt text][image17](=64x64)
 
 Of these, the one more dificult to classify is the "sign" one since after being made small it's a blur. 
 
