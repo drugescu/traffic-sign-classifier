@@ -19,6 +19,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
+<<<<<<< HEAD
 [image1]: ./results/histograms.png "Visualization" =64x64
 [image2]: ./results/pipeline.png "Processing Pipeline" =64x64
 [image3]: ./results/random_noise.jpg "Random Noise" =64x64
@@ -36,6 +37,25 @@ The goals / steps of this project are the following:
 [image15]: ./my_signs/watchforpedestrians1.jpg "Traffic Sign 12" =64x64
 [image16]: ./my_signs/wrongway1.jpg "Traffic Sign 13" =64x64
 [image17]: ./my_signs/yield1.jpg "Traffic Sign 14" =64x64
+=======
+[image1]: ./results/histograms.jpg "Visualization"
+[image2]: ./results/pipeline.jpg "Processing Pipeline"
+[image3]: ./results/random_noise.jpg "Random Noise"
+[image4]: ./my_signs/30lim1.jpg "Traffic Sign 1"
+[image5]: ./my_signs/50lim1.jpg "Traffic Sign 2"
+[image6]: ./my_signs/60lim1.jpg "Traffic Sign 3"
+[image7]: ./my_signs/nopassing1.jpg "Traffic Sign 4"
+[image8]: ./my_signs/novehicles1.jpg "Traffic Sign 5"
+[image9]: ./my_signs/priorityway1.jpg "Traffic Sign 6"
+[image10]: ./my_signs/round1.jpg "Traffic Sign 7"
+[image11]: ./my_signs/school1.jpg "Traffic Sign 8"
+[image12]: ./my_signs/stop1.jpg "Traffic Sign 9"
+[image13]: ./my_signs/trafficsignals1.jpg "Traffic Sign 10"
+[image14]: ./my_signs/turnleftahead1.jpg "Traffic Sign 11"
+[image15]: ./my_signs/watchforpedestrians1.jpg "Traffic Sign 12"
+[image16]: ./my_signs/wrongway1.jpg "Traffic Sign 13"
+[image17]: ./my_signs/yield1.jpg "Traffic Sign 14"
+>>>>>>> 11f4feb0f88e5643f6783a84b0cc9ffc68848408
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -152,6 +172,7 @@ To train the model, I several approaches, starting with the batch size, learning
 
 I got these results after training multiple times (validation accuracy):
 
+<<<<<<< HEAD
 * LeNet (1) with default hyperparams and unprocessed dataset: 0.895, 0.883, etc
 * LeNet (1) with efault hyperparams and just normalization: 0.906, 0.899, 0.909, etc
 * My modified LeNet (2) with no dropout, normalization: 0.915, 0.922, 0.919, 0.914, etc
@@ -162,6 +183,18 @@ I got these results after training multiple times (validation accuracy):
 * Final LeNet (2), improved processing, batch_size 64, learning_rate 0.002, 30 epochs: 0.917, 0.944, 0.950, 0.932, 0.919, etc. (shaky!)
 * Final LeNet (2), improved processing, batch_size 64, learning_rate 0.001, 100 epochs, 0.927, 0.934, etc.
 * Final LeNet 92), best processing, batch_size 64, learning_rate 0.0012, 30 epochs, 0.95 dropout: 0.934, 0.939, 0.944, 0.941, 0.958, etc.
+=======
+*) LeNet (1) with default hyperparams and unprocessed dataset: 0.895, 0.883, etc
+*) LeNet (1) with efault hyperparams and just normalization: 0.906, 0.899, 0.909, etc
+*) My modified LeNet (2) with no dropout, normalization: 0.915, 0.922, 0.919, 0.914, etc
+*) Flattened LeNet (3) with no dropout, normalization: 0.901, 0.905, 0.910, etc
+*) Final LeNet (2) with improved processing: 0.924, 0.931, 0.929, etc.
+*) Final LeNet (2), improved processing, 20 epochs, 0.0015 learning rate: 0.930, 0.937, 0.928, etc.
+*) Final LeNet (2), improved processing, with dropout 0.5: 0.868, 0.873, etc
+*) Final LeNet (2), improved processing, batch_size 64, learning_rate 0.002, 30 epochs: 0.917, 0.944, 0.950, 0.932, 0.919, etc. (shaky!)
+*) Final LeNet (2), improved processing, batch_size 64, learning_rate 0.001, 100 epochs, 0.927, 0.934, etc.
+*) Final LeNet 92), best processing, batch_size 64, learning_rate 0.0012, 30 epochs, 0.95 dropout: 0.934, 0.939, 0.944, 0.941, 0.958, etc.
+>>>>>>> 11f4feb0f88e5643f6783a84b0cc9ffc68848408
 
 I feel that many can "cheat" by using a big learning rate and getting the training to stop when it accidentally hits large values (such as 0.95), but as I've demonstrated in the notebook, this approach does not give good results on the actual test set and real images, not better than more training with less learning rate anyway. I would go on with a learning_rate of about 0.0075 and 200 epochs, with a bit more preprocessing and some augmentation (but not much) and it's likely that accuracy could go north of 0.96-0.97.
 
@@ -188,8 +221,18 @@ I first went to a higher learning_rate which sometimes led to good outcomes (0.0
 
 I then changed the batch_size up and down, going as low as 32 (which slowed down training a lot) and as high as 256 (with erratic training results) settling on an optimum of 64.
 
+<<<<<<< HEAD
 With the final results and increasing the epochs to about 30 I arrived at a steady training accuracy of 0.93-0.94. My own set of about 15 images held a 93% accuracy as well and the validation stands at about 91% which means that there isn't much overfitting, and the results hold for real images. This means he model is relatively stable.
 
+=======
+With the final results aand increasing the epochs to about 30 I arrived at a steady training accuracy of 0.93-0.94. My own set of about 15 images held a 93% accuracy as well and the validation stands at about 91% which means that there isn't much overfitting, and the results hold for real images. This means he model is relatively stable.
+
+If a well known architecture was chosen:
+* What architecture was chosen?
+* Why did you believe it would be relevant to the traffic sign application?
+* How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
+ 
+>>>>>>> 11f4feb0f88e5643f6783a84b0cc9ffc68848408
 
 ### Test a Model on New Images
 
@@ -201,7 +244,11 @@ Here are 14 German traffic signs that I found on the web:
 ![alt text][image7] ![alt text][image8] ![alt text][image9]
 ![alt text][image10] ![alt text][image11] ![alt text][image12]
 ![alt text][image13] ![alt text][image14] ![alt text][image15]
+<<<<<<< HEAD
 ![alt text][image16] ![alt text][image17]
+=======
+![alt text][image6] ![alt text][image17]
+>>>>>>> 11f4feb0f88e5643f6783a84b0cc9ffc68848408
 
 Of these, the one more dificult to classify is the "sign" one since after being made small it's a blur. 
 
