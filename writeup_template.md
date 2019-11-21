@@ -197,11 +197,11 @@ With the final results and increasing the epochs to about 30 I arrived at a stea
 
 Here are 14 German traffic signs that I found on the web:
 
-![alt text][image4](=64x64) ![alt text][image5](=64x64) ![alt text][image6](=64x64) 
-![alt text][image7](=64x64) ![alt text][image8](=64x64) ![alt text][image9](=64x64)
-![alt text][image10](=64x64) ![alt text][image11](=64x64) ![alt text][image12](=64x64)
-![alt text][image13](=64x64) ![alt text][image14](=64x64) ![alt text][image15](=64x64)
-![alt text][image16](=64x64) ![alt text][image17](=64x64)
+![alt text][image4] ![alt text][image5] ![alt text][image6]
+![alt text][image7] ![alt text][image8] ![alt text][image9]
+![alt text][image10] ![alt text][image11] ![alt text][image12]
+![alt text][image13] ![alt text][image14] ![alt text][image15]
+![alt text][image16] ![alt text][image17]
 
 Of these, the one more dificult to classify is the "sign" one since after being made small it's a blur. 
 
