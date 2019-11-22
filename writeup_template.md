@@ -170,9 +170,9 @@ I've saved my best models in the respective directories.
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 My final model results were:
-* training set accuracy of 93.4%
-* validation set accuracy of 91%
-* my test set accuracy of about 93%
+* validation set accuracy of 93.4%
+* training set accuracy of 91%
+* my own selected test set accuracy of about 93%
 
 If an iterative approach was chosen:
 
@@ -188,14 +188,14 @@ I first went to a higher learning_rate which sometimes led to good outcomes (0.0
 
 I then changed the batch_size up and down, going as low as 32 (which slowed down training a lot) and as high as 256 (with erratic training results) settling on an optimum of 64.
 
-With the final results and increasing the epochs to about 30 I arrived at a steady training accuracy of 0.93-0.94. My own set of about 15 images held a 93% accuracy as well and the validation stands at about 91% which means that there isn't much overfitting, and the results hold for real images. This means he model is relatively stable.
+With the final results and increasing the epochs to about 30 I arrived at a steady validation accuracy of 0.93-0.94. My own set of about 15 images held a 93% accuracy as well and the test stands at about 91% which means that there isn't much overfitting, and the results hold for real images. This means he model is relatively stable.
 
 
 ### Test a Model on New Images
 
 #### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
-Here are 14 German traffic signs that I found on the web:
+Here are 14 German traffic signs that I found on the web (I have found bigger images but cropped and resized to 32x32):
 
 ![alt text][image4] ![alt text][image5] ![alt text][image6]
 ![alt text][image7] ![alt text][image8] ![alt text][image9]
@@ -215,7 +215,7 @@ Here are the results of the prediction:
 | Pedestrians  			| Pedestrians									|
 | 30 km/h	      		| 30 km/h   					 				|
 | 50 km/h	      		| 50 km/h   					 				|
-| 60 km/h	      		| 30 km/h   					 				|
+| 60 km/h	      		| 80 km/h   					 				|
 | Stop Sign      		| Stop sign   									| 
 | Priority Road			| Priority Road      							|
 | School     			| School 										|
@@ -227,7 +227,7 @@ Here are the results of the prediction:
 | Turn Left Ahead 		| Turn Left Ahead								|
 
 
-The model was able to correctly guess 13 of the 14 traffic signs, which gives an accuracy of 93%. This compares favorably to the accuracy on the test set of 93%.
+The model was able to correctly guess 13 of the 14 traffic signs, which gives an accuracy of 93%. This compares favorably to the accuracy on the validation set of 93%.
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
@@ -237,17 +237,17 @@ The top five soft max probabilities were:
 |:---------------------:|:---------------------------------------------:| 
 | 1.0					| Yield											|
 | 1.0  					| Pedestrians									|
-| 0.99					| 30 km/h   					 				|
-| 0.87					| 50 km/h   					 				|
-| 0.53					| 60 km/h (wrongly predicted as 30 km/h 		|
+| 1.0					| 30 km/h   					 				|
+| 0.80					| 50 km/h   					 				|
+| 0.16					| 60 km/h (wrongly predicted as 80 km/h 		|
 | 1.0 					| Stop sign   									| 
 | 1.0 					| Priority Road      							|
 | 1.0 					| School 										|
-| 0.75 					| Traffic Signals      							|
+| 1.0 					| Traffic Signals      							|
 | 1.0 					| No Entry 										|
 | 1.0  					| No Vehicles									|
 | 1.0  					| No Passing									|
-| 0.97 					| Roundabout									|
+| 1.0 					| Roundabout									|
 | 1.0 					| Turn Left Ahead								|
 
 
